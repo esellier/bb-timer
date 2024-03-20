@@ -1,7 +1,7 @@
 {
-  "name": "bb-timer",
+  "name": "bb-chrono",
   "version": "0.1.0",
-  "description": "A kinda cool timer thing",
+  "description": "A kinda cool chrono thing",
   "license": "MIT",
   "svelte": "index.js",
   "module": "dist/plugin.min.js",

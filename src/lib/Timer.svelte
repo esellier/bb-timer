@@ -47,25 +47,26 @@
 
   function start(): void {
     timerIsRunning = true;
-    counter = longTimeToSecs(hrs, mins, secs);
+    counter = 0; //longTimeToSecs(hrs, mins, secs);
     // we don't want to create more than one interval
     if (intervalID) {
       return;
     }
     intervalID = window.setInterval(() => {
-      counter = counter - 1;
+      counter = counter + 1;
       displayTime = newDisplayTime(counter);
-      if (counter < 1) {
+      /*if (counter < 1) {
         stop();
         timeout();
-      }
-    }, 1000);
+      }*/
+    }, 10);
   }
 
   function stop(): void {
     timerIsRunning = false;
     window.clearInterval(intervalID);
     intervalID = 0;
+    timeout();
   }
 
   function reset(): void {

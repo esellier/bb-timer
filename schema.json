@@ -2,9 +2,9 @@
   "type": "component",
   "metadata": {},
   "schema": {
-    "name": "bb-timer",
-    "friendlyName": "Timer",
-    "description": "A timer with event trigger",
+    "name": "bb-chrono",
+    "friendlyName": "Chrono",
+    "description": "A Chrono with event trigger",
     "icon": "Text",
     "settings": [
       {
